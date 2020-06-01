@@ -10,7 +10,7 @@ def get_mentor_info(req: DialogflowRequest):
     json_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'proictis_mentors_api.json')
 
     # TODO change all this stuff below to query the database instead of a json file
-    with open(json_path, 'r') as fp:
+    with open('proictis_mentors_api.json', 'r') as fp:
         d = json.load(fp)
 
     best_match = process.extractOne(
