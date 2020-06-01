@@ -42,11 +42,3 @@ class VkAPI_:
             dont_parse_links=dont_parse_links,
             random_id=get_random_id()
         )
-
-
-vk = VkAPI_(
-    app_token=app.config['VK_APP_SERVICE_KEY'],
-    app_id=app.config['VK_APP_ID'],
-    group_token=app.config['VK_COMMUNITY_TOKEN'],
-    client_secret=app.config['VK_APP_CLIENT_SECRET']
-)
