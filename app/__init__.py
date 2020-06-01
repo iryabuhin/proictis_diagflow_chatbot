@@ -4,10 +4,13 @@ from flask import Flask
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 from bitlyshortener import Shortener
+from dotenv import load_dotenv
 
 sys.path.append(os.path.dirname(__file__))
 sys.path.append(os.path.join(os.path.dirname(__file__), 'app'))
 sys.path.append(os.path.join(os.path.dirname(__file__), os.path.join('app', 'commands')))
+
+load_dotenv()
 
 from config import Config
 
