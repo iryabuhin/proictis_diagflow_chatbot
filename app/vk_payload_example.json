@@ -1,0 +1,42 @@
+{
+  "payload": {
+    "vk": {
+      "text": "string",
+      "image_url": "url",
+      "attachments": [
+        {
+          "vk_id": "doc{OWNER_ID}_{MEDIA_ID} (if this field is present, all others are ignored)",
+          "url": "url",
+          "title": "title",
+          "extension": "extension"
+        }
+      ],
+      "keyboard": {
+        "one_time": true,
+        "inline": true,
+        "buttons": [
+          [
+            {
+              "action": {
+                "type": "open_link",
+                "link": "url, duh",
+                "label": "link button text",
+                "payload": "string or json"
+              }
+            }
+          ],
+          [
+            {
+              "action": {
+                "type": "text",
+                "label": "text on a button",
+                "payload": "text button payload"
+              },
+              "color": "primary | positive | negative"
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -3,6 +3,20 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# IDEs
+*.idea
+*.vscode
+
+# SQLite3 stuff
+*.db
+
+# Micro editor logs
+log.txt
+
+# Flask stuff
+.flaskenv
+.env
+
 # C extensions
 *.so
 
@@ -127,3 +141,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/app/intent_handlers/proictis_mentors_api.json
+/app/intent_handlers/projects.json
