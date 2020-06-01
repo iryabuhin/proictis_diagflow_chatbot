@@ -30,7 +30,6 @@ class Config:
     TELEGRAM_TOKEN = os.environ.get('TELEGRAM_TOKEN')
     CHAT_ID_INFORMATION_MESSAGE = os.environ.get('CHAT_ID_INFORMATION_MESSAGE')
 
-    GOOGLE_APPLICATION_CREDENTIALS = os.path.join(app_pkg_path, os.environ.get('GOOGLE_APPLICATION_CREDENTIALS'))
     PROJECT_ID = os.environ.get('PROJECT_ID')
-
+    GOOGLE_APPLICATION_CREDENTIALS = os.environ.get('GOOGLE_APPLICATION_CREDENTIALS')
 

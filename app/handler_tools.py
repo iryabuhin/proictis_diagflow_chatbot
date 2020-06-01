@@ -5,6 +5,8 @@ import logging
 from google.protobuf.json_format import MessageToDict
 from app import app
 
+os.environ['GOOGLE_APPLICATION_CREDENTIALS']
+
 class TelegramMessageLogHandler(logging.Handler):
     def emit(self, record):
         telegram_token_information_message = app.config['TELEGRAM_TOKEN_INFORMATION_MESSAGE']

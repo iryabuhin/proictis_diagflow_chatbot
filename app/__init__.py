@@ -17,7 +17,6 @@ from config import Config
 
 app = Flask(__name__)
 app.config.from_object(Config)
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = app.config['GOOGLE_APPLICATION_CREDENTIALS']
 
 url_shortener = Shortener(tokens=[app.config['BITLY_API_TOKEN']], max_cache_size=256)
 
