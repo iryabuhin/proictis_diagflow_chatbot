@@ -8,7 +8,7 @@ from app import url_shortener
 folder_path = os.path.abspath(os.path.dirname(__file__))
 
 def get_project_info(req: DialogflowRequest):
-    project_name = req.get_parameter('project_name')
+    project_name = req.get_parameter('projects')
 
     with open(os.path.join(folder_path, 'projects.json'), 'r') as fp:
         d = json.load(fp)
