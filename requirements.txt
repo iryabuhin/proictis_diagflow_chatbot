@@ -2,7 +2,6 @@ alembic==1.4.0
 cachetools==4.1.0
 certifi==2019.11.28
 chardet==3.0.4
-Click==7.0
 dateparser==0.7.4
 dialogflow==1.0.0
 dialogflow-fulfillment==0.1.2
