@@ -3,7 +3,7 @@ from pydialogflow_fulfillment import DialogflowRequest
 from app import app, db
 from app.vk_middleware import VKPayloadProcessor
 from app.handler_tools import detect_intent_texts
-from app._vk import vk
+from app import vk
 from app.intent_handler_dict import INTENT_HANDLER
 
 
