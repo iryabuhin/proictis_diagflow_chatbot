@@ -4,13 +4,14 @@ from fuzzywuzzy import process, fuzz
 import json
 import os.path
 
+json_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'proictis_mentors_api.json')
+
+
 def get_mentor_info(req: DialogflowRequest):
     q = req.get_parameter('mentor_name')
 
-    json_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'proictis_mentors_api.json')
-
     # TODO change all this stuff below to query the database instead of a json file
-    with open('proictis_mentors_api.json', 'r') as fp:
+    with open(os.path.join(json_path,'proictis_mentors_api.json'), 'r') as fp:
         d = json.load(fp)
 
     best_match = process.extractOne(
