@@ -69,13 +69,13 @@ def call_followup_event(*args, **kwargs):
 def get_all_projects_info(*args, **kwargs):
 
     text = 'Информацию о всех доступных на данный момент проектах для первого и второго' \
-                    'курсов можно найти на сайте Проектного офиса: proictis.sfedu.ru/projects'
+            'курсов можно найти на сайте Проектного офиса: https://proictis.sfedu.ru/projects'
 
     resp = {
         'payload': {
             'vk': {
                 "text": text,
-                "image_url": 'http://proictis.sfedu.ru/assets/images/logo_proictis_1.png'
+                "image_url": 'https://proictis.sfedu.ru/assets/images/logo_proictis_1.png'
             }
         }
     }
