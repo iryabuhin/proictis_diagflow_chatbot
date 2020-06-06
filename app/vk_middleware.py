@@ -23,7 +23,6 @@ class VKPayloadProcessor:
         if data.get('attachments'):
             self.get_attachments_from_urls(data['attachments'])
 
-    # i know downloading likes this is slow as shit but I really don't care
     def get_image_from_url(self, url: str):
         f = self.session.get(url, stream=True)
         photo = self.upload.photo_messages(photos=f.raw, peer_id=self.peer_id)[0]
